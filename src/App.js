@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import mais1pavAbaixo from './calc.js';
+
+import ChangePav from './ChangePav.js';
 
 function App() {
   return (
@@ -17,35 +18,47 @@ function App() {
                   <small>Área do terreno (m²):</small>
                 </td>
                 <td>
-                  <input id="ArTerreno"></input>
+                  <input id="ArTerreno" defaultValue="0"></input>
                 </td>
               </tr>
             </tbody>
           </table>
           <p></p>
-          <div id="mais" onClick={mais1pavAbaixo()}>+</div>
-          <div id="menos">-</div>
-          <small> inserir pavimento abaixo</small>
+          <div className="areaBtPav">
+            <button type="button" onClick={() => ChangePav(1,0)}>
+              +
+            </button>
+            <button type="button" onClick={() => ChangePav(-1,0)}>
+              -
+            </button>
+            <small> inserir pavimento abaixo</small>
+          </div>
           <div className="Wtborder">
           <table width="100%">
-            <tbody>
-              <tr>
+            <tbody id="layers">
+              <tr id="0">
                 <td>
                   <small>1</small>
                   <br></br>
-                  <input id="Pavimento_" className="Pavimento" defaultValue="Pav. Térreo"></input>
+                  <input id="layerP_0" className="Pavimento" defaultValue="Pav. Térreo"></input>
                 </td>
                 <td>
                   <small>Área (m²):</small><br></br>
-                  <input id="Ar_"></input>
+                  <input id="Ar_" defaultValue="0"></input>
                 </td>
               </tr>
             </tbody>
           </table>
           </div>
-          <div id="mais">+</div>
-          <div id="menos">-</div>
-          <small> inserir pavimento acima</small>
+          <div className="areaBtPav">
+            <button type="button" onClick={() => ChangePav(1,1)}>
+                +
+            </button>
+            <button type="button" onClick={() => ChangePav(-1,1)}>
+                -
+            </button>
+            <small> inserir pavimento acima</small>
+          </div>
           <p></p>
           <table>
             <tbody>
@@ -54,7 +67,7 @@ function App() {
                   <small>Área de projeção (m²):</small>
                 </td>
                 <td>
-                  <input id="ArProj"></input>
+                  <input id="ArProj" defaultValue="0"></input>
                 </td>
               </tr>
               <tr>
@@ -62,7 +75,7 @@ function App() {
                   <small>Área de permeável (m²):</small>
                 </td>
                 <td>
-                  <input id="ArPerm"></input>
+                  <input id="ArPerm" defaultValue="0"></input>
                 </td>
               </tr>
             </tbody>
