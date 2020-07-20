@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 import ChangePav from './ChangePav.js';
+import Calc from './Calc.js';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
                   <small>Área do terreno (m²):</small>
                 </td>
                 <td>
-                  <input id="ArTerreno" defaultValue="0"></input>
+                  <input id="ArTerreno" defaultValue="0" onChange={() => Calc()}></input>
                 </td>
               </tr>
             </tbody>
