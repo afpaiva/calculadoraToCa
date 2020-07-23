@@ -50,6 +50,15 @@ button{
     border-radius: 20px;
 }
 
+.Area{
+    text-align: right;
+    height: 20px;
+    width: 80px;
+    border-radius: 50px;
+    border-width: 0px;
+    margin-left: 10px;
+}
+
 #ArTerreno,
 #ArProj,
 #ArPerm{
@@ -60,16 +69,6 @@ button{
     border-width: 0px;
     margin-left: 10px;
 }
-
-#Ar_{
-    text-align: right;
-    height: 20px;
-    width: 80px;
-    border-radius: 50px;
-    border-width: 0px;
-    margin-left: 10px;
-}
-
 
 #Bg{
     position: fixed;
