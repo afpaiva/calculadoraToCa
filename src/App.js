@@ -24,7 +24,7 @@ function App() {
               <small>Área do terreno (m²):</small>
             </td>
             <td>
-              <input id="ArTerreno" defaultValue="0" onKeyDown={() => Calc()}></input>
+              <input id="ArTerreno" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
             </td>
           </tr>
         </tbody>
@@ -46,11 +46,11 @@ function App() {
               <td>
                 <small>1</small>
                 <br></br>
-                <input id="layerP_50" className="Pavimento" defaultValue="Pav. Térreo"  onKeyDown={() => Calc()}></input>
+                <input id="layerP_50" className="Pavimento" defaultValue="Pav. Térreo" onKeyDown={() => Calc()} onKeyUp={() => Calc()} onClick={() => Calc()}></input>
               </td>
             <td>
               <small>Área (m²):</small><br></br>
-              <input id="Ar_50" className="Area" defaultValue="0"  onKeyDown={() => Calc()}></input>
+              <input id='Ar_50' className="Area" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()} onClick={() => Calc()}></input>
             </td>
             </tr>
           </tbody>
@@ -73,7 +73,7 @@ function App() {
               <small>Área de projeção (m²):</small>
             </td>
             <td>
-              <input id="ArProj" defaultValue="0" onKeyDown={() => Calc()}></input>
+              <input id="ArProj" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
             </td>
           </tr>
           <tr>
@@ -81,7 +81,7 @@ function App() {
              <small>Área de permeável (m²):</small>
             </td>
             <td>
-              <input id="ArPerm" defaultValue="0" onKeyDown={() => Calc()}></input>
+              <input id="ArPerm" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
             </td>
           </tr>
         </tbody>
@@ -95,7 +95,7 @@ function App() {
              <small>Área total da construção:</small>
             </td>
             <td align="right">
-             <h3 id="arTotalConstruida">0,00<small> m²</small></h3>
+             <h3> <div className="result" id="arTotalConstruida">0,00</div><small> m²</small></h3>
             </td>
           </tr>
           <tr>
@@ -103,7 +103,7 @@ function App() {
               <small>Taxa de ocupação TO:</small>
             </td>
             <td align="right">
-             <h3>00,00<small> %</small></h3>
+             <h3><div className="result" id="taxaDeOcupacao">00,00</div><small> %</small></h3>
             </td>
           </tr>
           <tr>
@@ -111,7 +111,7 @@ function App() {
               <small>Coeficiente de<br/>aproveitamento CA:</small>
             </td>
             <td align="right">
-              <h3>00,00</h3>
+              <h3><div className="result" id="coefAproveitamento">00,00</div></h3>
             </td>
           </tr>
           <tr>
@@ -119,13 +119,13 @@ function App() {
               <small>Taxa de permeabilidade:</small>
             </td>
             <td align="right">
-             <h3>00,00<small> %</small></h3>
+             <h3><div className="result" id="taxaDePermeabilidade">00,00</div><small> %</small></h3>
             </td>
           </tr>
         </tbody>
       </table>
      </div>
-     <div id="Whatsapp"><small>Compartilhar resultados via Whatsapp</small></div>
+     <div id="Whatsapp"><small>Enviar resultados via Whatsapp</small></div>
     </div>
   </div>
   );
