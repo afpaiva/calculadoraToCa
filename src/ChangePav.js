@@ -12,7 +12,7 @@ export default function ChangePav(numPav, position){
       building.arrBuilding[layerUp+50] = document.getElementById("Ar_"+(layerUp+50)).value;
 
       let oldLayer = document.getElementById("layers").innerHTML;
-      let newLayer = '<tr id="'+(layerDown+50)+'"><td><small>'+layerDown+'</small><br><input id="Pav_'+(50+layerDown)+'" class="Pavimento" Value="'+(layerDown * -1)+'º Subsolo"></input></td><td><small>Área (m²):</small></br><input id="Ar_'+(50+layerDown)+'" Class="Area" Value ="'+building.arrBuilding[50+layerDown]+'"></input></td></tr>';
+      let newLayer = '<tr id="'+(layerDown+50)+'"><td><small>'+layerDown+'</small><br><input id="Pav_'+(50+layerDown)+'" class="Pavimento" Value="'+(layerDown * -1)+'º Subsolo"></input></td><td><small>Área (m²):</small></br><input id="Ar_'+(50+layerDown)+'" Class="Area" Value ="'+building.arrBuilding[50+layerDown]+'" type="number" ></input></td></tr>';
       
       document.getElementById("layers").innerHTML = newLayer + oldLayer;
       setArrInput();
@@ -23,7 +23,7 @@ export default function ChangePav(numPav, position){
       building.arrBuilding[layerDown+50] = document.getElementById("Ar_"+(layerDown+50)).value;
 
       let oldLayer = document.getElementById("layers").innerHTML;
-      let newLayer = '<tr id="'+(layerUp+50)+'"><td><small>'+(layerUp + 1)+'</small><br><input id="Pav_'+(50+layerUp)+'" class="Pavimento" Value="'+(layerUp)+'º Pavimento"></input></td><td><small>Área (m²):</small></br><input id="Ar_'+(50+layerUp)+'" Class="Area" Value ="'+building.arrBuilding[50+layerUp]+'""></input></td></tr>';
+      let newLayer = '<tr id="'+(layerUp+50)+'"><td><small>'+(layerUp + 1)+'</small><br><input id="Pav_'+(50+layerUp)+'" class="Pavimento" Value="'+(layerUp)+'º Pavimento"></input></td><td><small>Área (m²):</small></br><input id="Ar_'+(50+layerUp)+'" Class="Area" Value ="'+building.arrBuilding[50+layerUp]+'" type="number" "></input></td></tr>';
       
       document.getElementById("layers").innerHTML = oldLayer + newLayer;
       setArrInput();

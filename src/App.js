@@ -6,7 +6,7 @@ import Calc from './Calc.js';
 
 var arrBuilding = [];
 for (let i = 0; i < 100; i++){
-    arrBuilding[i] = 0;
+    arrBuilding[i] = '';
 }
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
               <small>Área do terreno (m²):</small>
             </td>
             <td>
-              <input id="ArTerreno" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
+              <input type="number" id="ArTerreno" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
             </td>
           </tr>
         </tbody>
@@ -50,7 +50,7 @@ function App() {
               </td>
             <td>
               <small>Área (m²):</small><br></br>
-              <input id='Ar_50' className="Area" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()} onClick={() => Calc()}></input>
+              <input id='Ar_50' type="number" className="Area" onKeyDown={() => Calc()} onKeyUp={() => Calc()} onClick={() => Calc()}></input>
             </td>
             </tr>
           </tbody>
@@ -73,7 +73,7 @@ function App() {
               <small>Área de projeção (m²):</small>
             </td>
             <td>
-              <input id="ArProj" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
+              <input id="ArProj" type="number" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
             </td>
           </tr>
           <tr>
@@ -81,7 +81,7 @@ function App() {
              <small>Área de permeável (m²):</small>
             </td>
             <td>
-              <input id="ArPerm" defaultValue="0" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
+              <input id="ArPerm" type="number" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>
             </td>
           </tr>
         </tbody>
@@ -125,7 +125,7 @@ function App() {
         </tbody>
       </table>
      </div>
-     <div id="Whatsapp"><small>Enviar resultados via Whatsapp</small></div>
+     <button id="Whatsapp" onClick={() => Calc("shareIt")}><small>Enviar resultados via Whatsapp</small></button>
     </div>
   </div>
   );
