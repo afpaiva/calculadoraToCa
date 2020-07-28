@@ -39,6 +39,7 @@ export default function Calc(shareIt){
         whatsAppTag += "%0ATaxa de ocupação: "+taxaDeOcupacao+"% ";
         whatsAppTag += "%0ACoeficiente ou índice de aproveitamento:" +coefAproveitamento;
         whatsAppTag += "%0ATaxa de permeabilidade: "+taxaDePermeabilidade+"% %0A";
+        whatsAppTag += "%0A %0ACalculadora TO.CA. :%0Awww.ensaios3d.com/apps";
 
         window.open(whatsAppTag);
     }
