@@ -11,7 +11,7 @@ calculation pattern.
 
 As a part of study of JS, React and React Native
 
-Designed by Andre Paiva
+Created by Andre Paiva
 
 andrepaiva.arq@gmail.com
 
