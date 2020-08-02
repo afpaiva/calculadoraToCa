@@ -25,7 +25,7 @@ export default function Calc(shareIt){
     taxaDePermeabilidade = taxaDePermeabilidade == "Infinity" || isNaN(taxaDePermeabilidade) ? '<img src='+infinity+'>' : taxaDePermeabilidade;
 
     // display results:
-    document.querySelector('div#arTotalConstruida').innerHTML = arTotalConstruida;
+    document.querySelector('div#arTotalConstruida').innerHTML = arTotalConstruida.toFixed(2);
     document.querySelector('div#taxaDeOcupacao').innerHTML = taxaDeOcupacao;
     document.querySelector('div#coefAproveitamento').innerHTML = coefAproveitamento;
     document.querySelector('div#taxaDePermeabilidade').innerHTML = taxaDePermeabilidade;
