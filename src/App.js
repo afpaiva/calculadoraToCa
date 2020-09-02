@@ -16,7 +16,6 @@ for (let i = 0; i < 100; i++){
 function App() {
   return (
   <div className="container">
-    <div id = "Bg"></div>
     <div id="calcTitle">
       <h1>CALCULADORA TO.CA.</h1>
     </div>
@@ -82,7 +81,7 @@ function App() {
           </tr>
           <tr>
             <td>
-             <small>Área de permeável (m²):</small>
+             <small>Área permeável (m²):</small>
             </td>
             <td>
               <input id="ArPerm" type="number" onKeyDown={() => Calc()} onKeyUp={() => Calc()}></input>

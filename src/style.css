@@ -24,6 +24,25 @@ img {
     height: 18px;
 }
 
+a{
+    cursor: pointer;
+    margin: 0px 10;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(37, 37, 37);
+    padding: 3px 10px;
+    border-radius: 0 5px 0 5px;
+}
+a:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+ul, li{
+    height: 35px;
+    list-style: none;
+    padding: 3px 15px;
+}
+
 .Pavimento {
     font-weight: bold;
     text-align: left;
@@ -93,8 +112,8 @@ button{
 }
 
 #calcTitle{
-    position: fixed;
-    margin-top: 20px;
+    position: relative;
+    margin-top: 70px;
     background-color: black;
     width: 300px;
     height: 70px;
@@ -103,12 +122,11 @@ button{
         justify-content: center;
     border-radius: 50px 0px 50px 50px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    z-index: 5;
 }
 
 #calc{
     position: absolute;
-    top: 130px;
+    top: 170px;
     max-width: 400px;
 }
 
@@ -125,4 +143,71 @@ button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.header{
+    z-index: 3;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+}
+.miniHeader{
+    overflow: hidden;
+    height: 0px;
+}
+
+.headerContent{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu{
+    overflow: hidden;
+    height: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        overflow: hidden;
+        height: 0px;
+    }
+    .miniHeader{
+        z-index: 3;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .1s;
+    }
+    .headerContent{
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #menu{
+        cursor: pointer;
+        overflow: hidden;
+        position: fixed;
+        top: 40px;
+        width: 100%;
+        height: 0px;
+        background-color: black;
+        z-index: 4;
+        border-radius: 0 0 50px 50px;
+        transition: .3s ;
+        text-align: right;
+    }
 }
