@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.css';
+import '../style.css';
+import Header from '../Components/Header';
 
 // Insert and remove floors above and below the ground floor (in PT/BR: Pavimento Térreo)
 import ChangePav from './ChangePav.js'; 
@@ -15,6 +16,8 @@ for (let i = 0; i < 100; i++){
 // web app body:
 function App() {
   return (
+    <>
+  <Header />
   <div className="container">
     <div id="calcTitle">
       <h1>CALCULADORA TO.CA.</h1>
@@ -135,6 +138,7 @@ function App() {
      <button id="Whatsapp" onClick={() => Calc("shareMe")} style={{width:135+'px', borderRadius: 5}}><small>Compartilhe via Whatsapp</small></button>
     </div>
   </div>
+  </>
   );
 }
 
