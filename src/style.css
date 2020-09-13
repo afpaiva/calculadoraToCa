@@ -26,19 +26,6 @@ img {
     height: 18px;
 }
 
-a{
-    cursor: pointer;
-    margin: 0px 10;
-    color: white;
-    text-decoration: none;
-    background-color: rgb(37, 37, 37);
-    padding: 3px 10px;
-    border-radius: 0 5px 0 5px;
-}
-a:hover{
-    background-color: rgb(51, 51, 51);
-}
-
 ul, li{
     height: 35px;
     list-style: none;
@@ -60,6 +47,24 @@ i{
     color: yellow;
 }
 
+a{
+    cursor: pointer;
+    margin: 0px 10;
+    color: white;
+    text-decoration: none;
+    background-color: #1877f2;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.aBtn  {
+    background-color: rgb(37, 37, 37);
+    padding: 3px 10px;
+    border-radius: 0 5px 0 5px;
+}
+.aBtn:hover{
+    background-color: rgb(51, 51, 51);
+}
 
 .Pavimento {
     font-weight: bold;
@@ -206,7 +211,42 @@ i{
     height: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+.message{
+    z-index: 6;
+    position: fixed;
+    background-image: url('./Assets/mail.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    margin-left: -12px;
+    right: 30%;
+}
+.number{
+    position: relative;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    left: -5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .message{
+        z-index: 6;
+        position: fixed;
+        background-image: url('./Assets/mail.png');
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: 50px;
+        margin-left: 0px;
+
+    }
     .header{
         overflow: hidden;
         height: 0px;
@@ -241,5 +281,12 @@ i{
         border-radius: 0 0 50px 50px;
         transition: .3s ;
         text-align: right;
+    }
+    #clickToCloseMenu{
+        position: fixed;
+        top: 230px;
+        height: 0vh;
+        width: 100%;
+        z-index: 5;
     }
 }

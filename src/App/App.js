@@ -133,7 +133,7 @@ function App() {
      </div>
      <button id="Whatsapp" onClick={() => Calc("shareIt")}><small>Enviar resultados via Whatsapp</small></button>
      <div style={{display:'flex', justifyContent:'center', marginTop: 20+'px'}}>
-     <div className="fb-share-button" data-href="http://www.ensaios3d.com/apps" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.ensaios3d.com%2Fapps&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+     <div className="fb-share-button" data-href="http://www.ensaios3d.com/apps" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.ensaios3d.com%2Fapps&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">Compartilhar</a></div>
      </div>
      <button id="Whatsapp" onClick={() => Calc("shareMe")} style={{width:135+'px', borderRadius: 5}}><small>Compartilhe via Whatsapp</small></button>
     </div>
