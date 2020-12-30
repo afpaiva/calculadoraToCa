@@ -14,13 +14,13 @@ export default function Message (){
           <h1>Mensagem:</h1>
           <article>
             <p>
-              Caros visitantes,
+              Colegas,
             </p>
             <p>
-              Gostaria de agradecer pela confiança depositada na aplicação que desenvolvi. É muito gratificante checar as estatísticas e ver que um produto está sendo útil no dia a dia de outras pessoas.
-            </p>
+              Estamos colocando nossa calculadora TO.CA. na PlayStore!<br></br>Logo será possível fazer os cálculos em seu smartfone, sem necessidade de conexão com a internet.
+           </p>
             <p>
-              Fiquem à vontade para compartilhá-la em suas redes!
+              Enquanto isso fiquem à vontade para compartilhá-la em suas redes!
             </p>
             <p>
               Muito obrigado,

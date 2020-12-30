@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style.css';
 import Header from '../Components/Header';
+import Info from '../Components/info';
 
 // Insert and remove floors above and below the ground floor (in PT/BR: Pavimento Térreo)
 import ChangePav from './ChangePav.js'; 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
   <Header />
+  <Info/>
   <div className="container">
     <div id="calcTitle">
       <h1>CALCULADORA TO.CA.</h1>

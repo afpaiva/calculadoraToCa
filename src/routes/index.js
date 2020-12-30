@@ -18,6 +18,7 @@ export default function Routes(){
       <Route path="/apps/calculadora_de_taxa_de_ocupacao/areaperm" exact component = {AreaPerm} />
       <Route path="/apps/calculadora_de_taxa_de_ocupacao/help" exact component = {Help} />
       <Route path="/apps/calculadora_de_taxa_de_ocupacao/message" exact component = {Message} />
+
     </Switch>
     </BrowserRouter>
   )
