@@ -3,11 +3,6 @@
 
 This is a side project of an occupancy rate and utilization coefficient calculator.
 
-```
-I understand that this project could be made on pure JavaScript.
-This is just for study porpouse.
-```
-
 - Deployed at www.ensaios3d.com/apps
 
 - For Engineers and Architects from Brazil and other coutries that uses this
