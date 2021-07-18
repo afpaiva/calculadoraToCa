@@ -19,6 +19,7 @@ function App() {
   return (
     <>
   <Header />
+  <div style={{marginTop: '50px'}}></div>
   <Info/>
   <div className="container">
     <div id="calcTitle">
@@ -94,7 +95,10 @@ function App() {
           </tr>
         </tbody>
       </table>
-      <p></p>
+      <br></br>
+      <Info/>
+      <br></br>
+    
       <div className="Wtborder">
       <table width="100%">
         <tbody>
@@ -133,6 +137,7 @@ function App() {
         </tbody>
       </table>
      </div>
+
      <button id="Whatsapp" onClick={() => Calc("shareIt")}><small>Enviar resultados via Whatsapp</small></button>
      <div style={{display:'flex', justifyContent:'center', marginTop: 20+'px'}}>
      <div className="fb-share-button" data-href="http://www.ensaios3d.com/apps" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.ensaios3d.com%2Fapps&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">Compartilhar</a></div>
