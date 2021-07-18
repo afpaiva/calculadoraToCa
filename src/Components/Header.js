@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Header (){
 
   var notification;
-  localStorage.getItem('state')==="read" ? notification = null : notification = <div className="number">1</div>;
+  localStorage.getItem('msg')==="read" ? notification = null : notification = <div className="number">1</div>;
 
   return(<>
   <div className="header">
@@ -31,10 +31,7 @@ export default function Header (){
   </div>
   <div id="clickToCloseMenu" onClick={()=>hideMenu()}></div>
 
-  <Link to="/apps/calculadora_de_taxa_de_ocupacao/message"
-    onClick={()=>localStorage.setItem('state',"read")}>
-    <div className="message"> { notification } </div>
-  </Link>
+  
   
   </>);
 }

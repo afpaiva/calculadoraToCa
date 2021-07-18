@@ -14,17 +14,19 @@ export default function Message (){
           <h1>Mensagem:</h1>
           <article>
             <p>
-              Colegas,
+              Olá,
             </p>
             <p>
-              Estamos colocando nossa calculadora TO.CA. na PlayStore!<br></br>Logo será possível fazer os cálculos em seu smartfone, sem necessidade de conexão com a internet.
+              Nossa calculadora TO.CA. já está disponível na PlayStore!<br/>
+              Agora você pode fazer os cálculos em seu smartfone, sem necessidade de conexão com a internet.
            </p>
             <p>
-              Enquanto isso fiquem à vontade para compartilhá-la em suas redes!
+              A calculadora tem te ajudado?<br/>
+              Buy me a coffe? Why not? ☺
             </p>
             <p>
               Muito obrigado,
-              André Paiva ;)
+              André 😉
             </p>
 
             

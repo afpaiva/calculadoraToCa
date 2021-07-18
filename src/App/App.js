@@ -2,6 +2,7 @@ import React from 'react';
 import '../style.css';
 import Header from '../Components/Header';
 import Info from '../Components/info';
+import PayPal from  '../Components/PayPal';
 
 // Insert and remove floors above and below the ground floor (in PT/BR: Pavimento Térreo)
 import ChangePav from './ChangePav.js'; 
@@ -19,8 +20,6 @@ function App() {
   return (
     <>
   <Header />
-  <div style={{marginTop: '50px'}}></div>
-  <Info/>
   <div className="container">
     <div id="calcTitle">
       <h1>CALCULADORA TO.CA.</h1>
@@ -96,7 +95,7 @@ function App() {
         </tbody>
       </table>
       <br></br>
-      <Info/>
+      <PayPal />
       <br></br>
     
       <div className="Wtborder">
@@ -137,6 +136,8 @@ function App() {
         </tbody>
       </table>
      </div>
+
+      <Info/>
 
      <button id="Whatsapp" onClick={() => Calc("shareIt")}><small>Enviar resultados via Whatsapp</small></button>
      <div style={{display:'flex', justifyContent:'center', marginTop: 20+'px'}}>
